@@ -8,8 +8,12 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'inserir-itens',
     pathMatch: 'full'
+  },
+  {
+    path: 'inserir-itens',
+    loadChildren: () => import('./inserir-itens/inserir-itens.module').then( m => m.InserirItensPageModule)
   },
 ];
 

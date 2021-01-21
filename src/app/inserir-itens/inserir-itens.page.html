@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Lista de Supermercado</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+
+        <ion-item>
+          <ion-label position="floating">Digite um ítem</ion-label>
+          <ion-input [(ngModel)]="nome" type="text"></ion-input>
+          <ion-label position="floating">Digite a quantidade, se for o caso</ion-label>
+          <ion-input [(ngModel)]="quantidade" type="text"></ion-input>
+        </ion-item>
+
+        <ion-button expand="full" (click)="inserirItemNaLista();">Insira na lista</ion-button>
+
+        <ion-item>
+          <ion-label expand="full"><b>Clique sobre o ítem pela primeira vez ao <br>colocar no carrinho.<br>
+          Clique pela segunda vez para marcar <br>compra e tirar da lista.</b></ion-label>
+        </ion-item>
+
+        <ion-item expand="full" *ngFor="let item of lista" (click)="agir(item);">
+          Ítem: {{ item.nome }} ({{ item.quantidade}}), Carrinho: {{ item.carrinho }}
+        </ion-item>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
