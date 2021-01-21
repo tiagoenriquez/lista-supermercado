@@ -1,4 +1,4 @@
-##<h1 align=center>Lista de Supermercado</h1>
+<h1 align=center>Lista de Supermercado</h1>
 
 Aplicativo mobile feito no Angular (Framework: Ionic; Linguagem de Programação: Typescript) que permite criação de lista de supermercado.
 
