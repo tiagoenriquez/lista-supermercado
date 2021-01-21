@@ -7,4 +7,4 @@ Permite:
  - Colocar ítens no carrinho
  - Marcar a compra dos ítens excluindo da lista
 
-Salva a lista no LocalStorage.
+Salva a lista no LocalStorage
